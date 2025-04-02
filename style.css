@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primarycolor: #ad91cf;
+    --secondarycolor: rgb(196,169,230);
+    --blackcolor: rgb(46,46,71);
+    --bordercolor: rgb(46,46,71);
+    --inputcolor: rgb(241,241,241);
+    --successcolor: rgb(205,237,207);
+    --failurecolor: rgb(255,0,0);
+}
+html{
+    font-size: 90%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-image:url(./image/Home-Four-Banner-Background-Image.png) ;
+}
+    .form_container{
+        width: 290px;
+        height: 450px;
+        padding: 0 1rem;
+        border-radius: 3px;
+        border: 1px solid
+        blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        position: relative;
+        background-color: blueviolet;
+        overflow: hidden;
+        z-index: 1;
+        :hover input{
+            background-color:  blueviolet;
+        }
+    }
+    .overlay{
+        position: absolute;
+        background: var(--secondarycolor);
+        content: '';
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        z-index: 2;
+        top: -24%;
+    }
+
+        .titleDiv{
+            position: relative;
+            width: 100%;
+            margin: 10px auto 5px;
+            text-align: center;
+            transform: translateY(-3rem);
+            z-index: 1000;
+        
+        }
+        .title{
+            color: var(--blackcolor);
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+      .row{
+        display: grid;
+        position: relative;
+        gap: -1rem;
+        z-index: 1000;
+        transform: translateY(-1rem); 
+        padding-bottom: 1rem;
+      }
+    input{
+               width: 100%;
+               background: var(--inputcolor);
+               border: none;
+               outline: none;
+               color: var(--blackcolor);
+               font-weight: 500;
+               padding: .5rem;
+               border-radius: 3px;
+               
+        }
+        
+        ::placeholder{
+            font-size: 10px;
+        
+        }
+        #submitBtn{
+            color: white
+            } 
+        
+
+        .register_container
+        {
+            width: 290px;
+            height: 550px;
+            padding: 0 1rem;
+            border-radius: 3px;
+            border: 1px solid
+            blueviolet;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
+            position: relative;
+            background-color: blueviolet;
+            overflow: hidden;
+            z-index: 1;
+            .overlay{
+                height: 550px;
+                top: -80%;
+            }
+            :hover input{
+                background: var(--secondarycolor);
+                color: var(--blackcolor);}
+        }
+        .dashboard{
+            text-align: center;
+            h1{
+                font-size: 5rem;
+                color: blueviolet;
+                margin: 1rem 0;
+            }
+            .logOutBtn{
+                cursor: pointer;}
+                :hover a{
+                    background: var(--secondarycolor);
+                    color: var(--blackcolor);}
+                
+                a{
+                    padding: 10px 20px;
+                    color: white;
+                    background: var(--blackcolor);
+                    border-radius: 3px;
+                    text-decoration: none;
+                }
+            }
+
+            .success, .addedAccount{
+                text-align: center;
+                padding: 10px 20px;
+                background: var(--successcolor);
+                color:var(--blackcolor) ;
+                margin-bottom: 1rem;
+            }
+            .addedAccount{
+                margin: 0;
+                transform: translateY(100px);
+            }
+
+            .fail{
+                position: relative;
+                z-index: 1000;
+                color: var(--failurecolor);
+            }
+    
+ 
+    
+ 
